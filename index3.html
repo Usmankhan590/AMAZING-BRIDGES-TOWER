@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AMAZING BRIDGES</title>
+  <link rel="stylesheet" href="bridges.css">
+  <link rel="stylesheet" href="styel.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <div class="wrapper">
+               <nav>
+                  <input type="checkbox" id="show-menu">
+                   <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                   <div class="content">
+                    <div class="logo"><a href="bridges.html"><img src="ik.jpg"></a>AMAZING BRIDGES</div>
+                     <ul class="links">
+                       <li><a href="bridges.html">HOME</a></li>
+                       <li><a href="index1.html">GALLERY</a></li>
+                       <li>
+                         <a href="index1.html" class="desktop-link">BRIDGES<i class="bi bi-caret-down-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                          </svg></a>
+                         <input type="checkbox" id="show-features">
+                         <label for="show-features">BRIDGES</label>
+                         <ul>
+                             <li><a href="index.html">LONGEST</a></li>
+                             <li><a href="index6.html">TALLEST</a></li>
+                             <li><a href="index7.html">OLDEST</a></li>
+                         </ul>
+                        <li><a href="index8.html">HISTORY</a></li>
+                       <li><a href="index2.html">SITE MAP</a></li>
+                       <li><a href="index9.html">BOOKING</a></li>
+                       <li><a href="index3.html">QUERIES</a></li>
+                       <li><a href="index4.html">CONTACT US</a></li>
+                       <li><a href="index5.html">ABOUT US</a></li>
+                     </ul>
+                   </div>
+               </nav>
+            </div>
+            <div class="heading">
+                <h1>QUERIES</h1>
+                <P>NOW YOU HAVE ANY PROBLEM AND QUESTION YOU ALSO HAVE QUERIES SECTION</P>
+            </div>
+        </section>    
+        <div class="hero">
+          <form action="">
+            <div class="input-group">
+              <input type="text" id="name"  required>
+            <label for="name"><i class="fas fa-user"></i> YOUR NAME</label>
+            </div>
+            <div class="input-group">
+              <input type="text" id="number" required>
+            <label for="number"><i class="fas fa-phone-square-alt"></i> PHONE NO</label>
+            </div>
+            <div class="input-group">
+              <input type="email" id="email" required>
+            <label for="email"><i class="fas fa-envelope"></i> EMAIL ID</label>
+            </div>
+            <div class="input-group">
+              <textarea id="message" rows="8" required></textarea>
+            <label for="message"><i class="fas fa-comments"></i> YOUR MESSGAE</label>
+            </div>
+            <button type="submit" id="btnclick" value="submit" onclick="clickevent();">SUBMIT <i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+        <script type="text/javascript">
+          function clickevent(){
+            if(name.value==""|| name.value==null){
+              
+            }         
+            if (number.value==""|| number.value==null){
+            
+            }
+            if (email.value==""|| email.value==null){
+
+            }
+            if (message.value==""|| message.value==null) {
+              alert("PLEASE FILL FULL QUERY!");
+            }
+            else{
+              alert("YOUR QUERY HAS BEEN SENT");
+            }
+             
+           
+          }
+         </script>
+    </body>
+</html>

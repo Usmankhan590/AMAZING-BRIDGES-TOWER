@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bridges.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
+    integrity="sha256-c9vxcXyAG4paArQG3xk6DjyW/9aHxai2ef9RpMWO44A=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
+    <title>AMAZING BRIDGES</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        h1
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="button" id="create_pdf" value="Generate PDF">
+   
+   <script>
+       var doc = new jsPDF();
+       var specialElementHandlers = {
+           '#editor': function (element, renderer) {
+               return true;
+           }
+       };
+   
+       $('#cmd').click(function () {
+           doc.fromHTML($('#content').html(), 15, 15, {
+               'width': 170,
+                   'elementHandlers': specialElementHandlers
+           });
+           doc.save('sample-file.pdf');
+       });
+   
+       // This code is collected but useful, click below to jsfiddle link.
+   </script>
+</body>
+</html>
